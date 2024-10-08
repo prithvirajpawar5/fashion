@@ -25,6 +25,7 @@ def main():
     with open(filepath + "/OpenAI_API_Key.txt", "r") as f:
          openai_api_key = ' '.join(f.readlines())
 
+    print(openai_api_key)
     # Update the OpenAI API key by updating the environment variable
     os.environ["OPENAI_API_KEY"] = openai_api_key
     openai.api_key = openai_api_key
